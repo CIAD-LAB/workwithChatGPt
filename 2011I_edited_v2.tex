@@ -1,164 +1,14 @@
-%%
-%% This is file `elsarticle-template-harv.tex',
-%% generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% elsarticle.dtx  (with options: `harvtemplate')
-%%
-%% Copyright 2007, 2008 Elsevier Ltd.
-%%
-%% This file is part of the 'Elsarticle Bundle'.
-%% -------------------------------------------
-%%
-%% It may be distributed under the conditions of the LaTeX Project Public
-%% License, either version 1.2 of this license or (at your option) any
-%% later version.  The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.2 or later is part of all distributions of LaTeX
-%% version 1999/12/01 or later.
-%%
-%% The list of all files belonging to the 'Elsarticle Bundle' is
-%% given in the file `manifest.txt'.
-%%
-%% Template article for Elsevier's document class `elsarticle'
-%% with harvard style bibliographic references
-%% SP 2008/03/01
-
-\documentclass[preprint,12pt]{elsarticle}
-
-%% Use the option review to obtain double line spacing
-%\documentclass[authoryear,preprint,review,12pt]{elsarticle}
-
-%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
-%% for a journal layout:
-%% \documentclass[final,1p,times]{elsarticle}
-%% \documentclass[final,1p,times,twocolumn]{elsarticle}
-%% \documentclass[final,3p,times]{elsarticle}
-%% \documentclass[final,3p,times,twocolumn]{elsarticle}
-%% \documentclass[final,5p,times]{elsarticle}
-%% \documentclass[final,5p,times,twocolumn]{elsarticle}
-
-%How Do I Get LaTeX to Double-Space?
-\renewcommand{\baselinestretch}{1}
-% For other spacing (ie triple) just change the 1 to 2.
-
-%% if you use PostScript figures in your article
-%% use the graphics package for simple commands
-%% \usepackage{graphics}
-%% or use the graphicx package for more complicated commands
-\usepackage{graphicx}
-%% or use the epsfig package if you prefer to use the old commands
-%% \usepackage{epsfig}
-
-%% The amssymb package provides various useful mathematical symbols
-\usepackage{amssymb}
-%% The amsthm package provides extended theorem environments
-\usepackage{amsthm}
-
-%\usepackage{algorithm}
-%\usepackage{algorithmic}
-
-%% The lineno packages adds line numbers. Start line numbering with
-%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
-%% for the whole article with \linenumbers.
-\usepackage{lineno}
-\usepackage{amsmath}
-\usepackage{multirow}
-
-%\usepackage[fleqn]{amsmath}
-%\usepackage{array}
-%\usepackage{units}
-%\usepackage{tikz}
-%\usepackage{graphicx}
-\usepackage{booktabs}
-%\usepackage{setspace}
-%\usepackage{pstricks,framed}
-\usepackage{hyperref}  % \url
-
-
-\journal{ Applied Soft Computing, Volume 12, Issue 8, August 2012, Pages 2631¨C2637 }
-
 \begin{document}
 
 \linenumbers
 
 \begin{frontmatter}
-%% Title, authors and addresses
-%% use the tnoteref command within \title for footnotes;
-%% use the tnotetext command for theassociated footnote;
-%% use the fnref command within \author or \address for footnotes;
-%% use the fntext command for theassociated footnote;
-%% use the corref command within \author for corresponding author footnotes;
-%% use the cortext command for theassociated footnote;
-%% use the ead command for the email address,
-%% and the form \ead[url] for the home page:
-%% \title{Title\tnoteref{label1}}
-%% \tnotetext[label1]{}
-%\author{Yi Chen\corref{cor1}\fnref{label1=e1}}
-%\ead{ yichen@mech.gla.ac.uk }
-%\author{Matthew P. Cartmell\corref{cor1}\fnref{label1=e1}}
-%\ead{ matthewc@mech.gla.ac.uk}
-%%\ead[url]{home page}
-%% \fntext[label2]{}
-%% \cortext[cor1]{}
-%% \address{Address\fnref{label3}}
-%% \fntext[label3]{}
 
-%\title{ Hybrid Fuzzy Skyhook Surface Sliding Mode Control
-%on Semi-active Vehicle Suspension Systems for Ride Comfort
-%Enhancement }
+\title{Exchange Rates Determination Based on Genetic Algorithms using Mendel's Principles: Investigation and Estimation under Uncertainty}
 
-\title{Exchange Rates Determination Based on Genetic Algorithms using Mendel's Principles:
-Investigation and Estimation under Uncertainty}
-
-% not more than 10 words
-%\author{Yi Chen \corref{cor1}\fnref{label1=e1}}
-\author[First,Second]{Yi Chen \corref{cor1}\fnref{fn1}}
-%\author[First]{Yi Chen \corref{cor1}\fnref{fn1}}
-\author[Third,Fourth]{Guangfeng Zhang}
-%\author[First]{Yi Chen\corref{1}\fnref{First}}
-%\author[Second]{Second B. Author, Jr.}
-%\author[Third]{Third C. Author}
-%\address{Department of Mechanical Engineering, University of Glasgow, Glasgow, G12 8QQ, UK (e-mail: yichen@mech.gla.ac.uk)}
-%\fntext[label1=e1]{fax: 44(0)-141-330-4343 }
-\cortext[cor1]{e-mail: leo.chen.yi@live.co.uk,
-%        tel: +44(0)-141-330-2477,
-%        fax: +44(0)-141-330-4343. 
-}
-
-\address[First]{School of Mechatronics Engineering,
- University of Electronic Science and Technology of China, Chengdu,
- 611731, China}
- 
-\address[Second]{Department of Mechanical Engineering, University of Glasgow, Glasgow, G12 8QQ, UK
-%, (e-mail: yichen@mech.gla.ac.uk)
-}
-
-\address[Third]{Department of Economics and Finance, School of Social Sciences, Brunel University, Uxbridge, England, UB8 3PH, UK
-%(e-mail: guangfeng.zhangATbrunel.ac.uk)
-%\address[Third]{Department of Economics, University of Glasgow, Glasgow, G12 8RT, UK
-%, (e-mail: guangfeng.zhang@brunel.ac.uk, g.zhang.1@research.gla.ac.uk)
-}
-
-\address[Fourth]{Department of Economics, University of Glasgow, Glasgow, G12 8RT, UK
-%, (e-mail: guangfeng.zhang@brunel.ac.uk, g.zhang.1@research.gla.ac.uk)
-}
-
-%\address[Third]{Electrical Engineering Department,
-%   Seoul National University, Seoul, Korea, (e-mail: author@snu.ac.kr)}
-
-%% use optional labels to link authors explicitly to addresses:
-%\author{Yi Chen\corref{cor1}\fnref{label1=e1}}
-%\author{Yi Chen\corref{cor1}}
-%\address{Department of Mechanical Engineering, University of Glasgow, Glasgow, G12 8QQ, UK}
-%\ead{ yichen@mech.gla.ac.uk, fax: 44(0)-141-330-4343 }
-
-\fntext[fn1]{These authors contributed equally to this work.}
 
 \begin{abstract}
 \label{abstract}
-%% Text of abstract
 A genetic algorithm using Mendel's principle (Mendel-GA), in which the random
 assignment of alleles from parents to offsprings is implied by the
 Mendel genetic operator, is proposed for the exchange rates determination problem.
@@ -176,17 +26,12 @@ estimation modelling with high-frequency data.
 \end{abstract}
 
 \begin{keyword}
-%% keywords here, in the form: keyword \sep keyword
 genetic algorithm \sep Mendel's principle  \sep uncertainty \sep
 estimation \sep high-frequency \sep exchange rates \sep regression
-%% PACS codes here, in the form: \PACS code \sep code
-%% MSC codes here, in the form: \MSC code \sep code
-%% or \MSC[2008] code \sep code (2000 is the default)
 \end{keyword}
 
 \end{frontmatter}
 
-%\linenumbers
 
 \section{Introduction}
 \label{Introduction}
@@ -250,32 +95,6 @@ non-inferior alternatives is not only problem-dependent, it
 generally depends also on the subjective preferences of a decision
 agent. Thus, the final solution to the problem is the result of both
 an optimisation process and a decision process\cite{Chen_JAP_2011,Chen_AES_2011,Chen_OE_2011,Chen_CEC_2007}.
-
-%http://encarta.msn.com/dictionary_/Daffodil.html
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[scale=0.15]{Mendel_Daffodil}
-%\caption{Daffodils with different hybrid characters}
-%\label{Mendel_Daffodil}
-%\end{figure}
-
-%Since ancient time, farmers and herders have been selectively
-%breeding their plants and animals to produce more useful hybrids.
-%Knowledge of the genetic mechanisms finally came as a result of
-%careful laboratory breeding experiments carried out and published by
-%Mendel in 1860s \cite{Mendel1865} \cite{O'Neil2009}. Through the
-%selective cross-breeding of common pea plants over many generations,
-%Mendel discovered that certain traits show up in offspring without
-%any blending of parental characteristics. For example, the pea flowers
-%are either purple or white - intermediate colors do not appear in the
-%offspring of cross-pollinated pea plants. Although Mendel's research
-%was with plants, the basic underlying principles of heredity that he
-%discovered apply also to people and animals, because the
-%mechanisms of heredity are essentially the same for all complex life
-%forms. For example, Figure \ref{Mendel_Daffodil} shows Daffodils with
-%different hybrid characters, such as colour - white (or whiteish) daffodils,
-%green, yellow, pink, orange, etc. - shape, and size.
 
 In recent years, a lot of literature has been proposed in the area
 of GA using Mendel's principles \cite{Mendel1865,O'Neil2009,Song1999,Park2001,Kadrovach2001,Kadrovach2002}. In this paper, a new GA
@@ -1414,5 +1233,3 @@ Simple Genetic Algorithm Laboratory Toolbox for MATLAB,
 \end{document}
 
 \endinput
-%%
-%% End of file `elsarticle-template-harv.tex'.
