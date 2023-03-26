@@ -1,0 +1,1418 @@
+%%
+%% This is file `elsarticle-template-harv.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% elsarticle.dtx  (with options: `harvtemplate')
+%%
+%% Copyright 2007, 2008 Elsevier Ltd.
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% -------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with harvard style bibliographic references
+%% SP 2008/03/01
+
+\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%How Do I Get LaTeX to Double-Space?
+\renewcommand{\baselinestretch}{1}
+% For other spacing (ie triple) just change the 1 to 2.
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+\usepackage{amsthm}
+
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+\usepackage{lineno}
+\usepackage{amsmath}
+\usepackage{multirow}
+
+%\usepackage[fleqn]{amsmath}
+%\usepackage{array}
+%\usepackage{units}
+%\usepackage{tikz}
+%\usepackage{graphicx}
+\usepackage{booktabs}
+%\usepackage{setspace}
+%\usepackage{pstricks,framed}
+\usepackage{hyperref}  % \url
+
+
+\journal{ Applied Soft Computing, Volume 12, Issue 8, August 2012, Pages 2631¨C2637 }
+
+\begin{document}
+
+\linenumbers
+
+\begin{frontmatter}
+%% Title, authors and addresses
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%\author{Yi Chen\corref{cor1}\fnref{label1=e1}}
+%\ead{ yichen@mech.gla.ac.uk }
+%\author{Matthew P. Cartmell\corref{cor1}\fnref{label1=e1}}
+%\ead{ matthewc@mech.gla.ac.uk}
+%%\ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+%\title{ Hybrid Fuzzy Skyhook Surface Sliding Mode Control
+%on Semi-active Vehicle Suspension Systems for Ride Comfort
+%Enhancement }
+
+\title{Exchange Rates Determination Based on Genetic Algorithms using Mendel's Principles:
+Investigation and Estimation under Uncertainty}
+
+% not more than 10 words
+%\author{Yi Chen \corref{cor1}\fnref{label1=e1}}
+\author[First,Second]{Yi Chen \corref{cor1}\fnref{fn1}}
+%\author[First]{Yi Chen \corref{cor1}\fnref{fn1}}
+\author[Third,Fourth]{Guangfeng Zhang}
+%\author[First]{Yi Chen\corref{1}\fnref{First}}
+%\author[Second]{Second B. Author, Jr.}
+%\author[Third]{Third C. Author}
+%\address{Department of Mechanical Engineering, University of Glasgow, Glasgow, G12 8QQ, UK (e-mail: yichen@mech.gla.ac.uk)}
+%\fntext[label1=e1]{fax: 44(0)-141-330-4343 }
+\cortext[cor1]{e-mail: leo.chen.yi@live.co.uk,
+%        tel: +44(0)-141-330-2477,
+%        fax: +44(0)-141-330-4343. 
+}
+
+\address[First]{School of Mechatronics Engineering,
+ University of Electronic Science and Technology of China, Chengdu,
+ 611731, China}
+ 
+\address[Second]{Department of Mechanical Engineering, University of Glasgow, Glasgow, G12 8QQ, UK
+%, (e-mail: yichen@mech.gla.ac.uk)
+}
+
+\address[Third]{Department of Economics and Finance, School of Social Sciences, Brunel University, Uxbridge, England, UB8 3PH, UK
+%(e-mail: guangfeng.zhangATbrunel.ac.uk)
+%\address[Third]{Department of Economics, University of Glasgow, Glasgow, G12 8RT, UK
+%, (e-mail: guangfeng.zhang@brunel.ac.uk, g.zhang.1@research.gla.ac.uk)
+}
+
+\address[Fourth]{Department of Economics, University of Glasgow, Glasgow, G12 8RT, UK
+%, (e-mail: guangfeng.zhang@brunel.ac.uk, g.zhang.1@research.gla.ac.uk)
+}
+
+%\address[Third]{Electrical Engineering Department,
+%   Seoul National University, Seoul, Korea, (e-mail: author@snu.ac.kr)}
+
+%% use optional labels to link authors explicitly to addresses:
+%\author{Yi Chen\corref{cor1}\fnref{label1=e1}}
+%\author{Yi Chen\corref{cor1}}
+%\address{Department of Mechanical Engineering, University of Glasgow, Glasgow, G12 8QQ, UK}
+%\ead{ yichen@mech.gla.ac.uk, fax: 44(0)-141-330-4343 }
+
+\fntext[fn1]{These authors contributed equally to this work.}
+
+\begin{abstract}
+\label{abstract}
+%% Text of abstract
+A genetic algorithm using Mendel's principle (Mendel-GA), in which the random
+assignment of alleles from parents to offsprings is implied by the
+Mendel genetic operator, is proposed for the exchange rates determination problem.
+Besides the traditional genetic operators of selection, crossover, and mutation, Mendel's principles are
+included, in the form of an operator in the genetic algorithm's evolution process. In
+the quantitative analysis of exchange rates determination, the
+Mendel-GA examines the exchange rate fluctuations at the
+short-run horizon. Specifically, the aim is to revisit the
+determination of high-frequency exchange rates and examine the
+differences between the method of genetic algorithms and that of the
+traditional estimation methods. A simulation with a given initial
+conditions has been devised in $MATLAB$, and it is shown that the
+Mendel-GA can work valuably as a tool for the exchange rates
+estimation modelling with high-frequency data.
+\end{abstract}
+
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+genetic algorithm \sep Mendel's principle  \sep uncertainty \sep
+estimation \sep high-frequency \sep exchange rates \sep regression
+%% PACS codes here, in the form: \PACS code \sep code
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+\end{keyword}
+
+\end{frontmatter}
+
+%\linenumbers
+
+\section{Introduction}
+\label{Introduction}
+
+The modelling of exchange rates movements is a challenging task in
+international finance. A strong consensus in academic research is
+that macroeconomic fundamentals have no explanatory power for
+exchange rates fluctuations in the short run \cite{Obstfeld2000,Rogoff1996}. In contrast, microstructure approaches focus on
+how is information concerning the macro fundamentals,
+non-fundamentals and its transfers in the foreign exchange market,
+and impacting the movement of exchange rates. Empirical evidence
+demonstrates the significant positive link between exchange rates and
+their corresponding contemporaneous order flow, which is defined as
+the net value between buyer-initiated trade and seller-initiated
+trade \cite{Lyons2001,Killeen2001,Payne2003}.
+
+Other evolutionary computation (EC) methods were proposed for
+exchange rates analysis, and other financial studies. In 1996, Hann and
+Steurer \cite{Hann1996} analysed the influences of data frequency on
+American Dollars/Deutsch Mark forecasting by artificial neural
+networks (ANN), in which the studies reported that the ANN do not greatly
+improve the forecasting accuracy when monthly data is applied.
+In 2003, Qi and Wu \cite{Qi2003} proposed a multi-layer feed forward
+network to forecast exchange rates, the numerical results of which
+concluded that the ANN can not perform efficiently in out-of-sample
+forecast accuracy. In 2007, Yadav, Kalra, and John \cite{Yadav2007}
+applied standard multilayer neural network (SMN) to predict a set of
+time-series data for an exchange rate prediction from 2002 to 2004.
+
+In 2005, Rimcharoen, Sutivong, and Chongstitvatana
+\cite{Rimcharoen2005} proposed a method of adaptive evolution
+strategies (ES) for the prediction of the stock exchange of
+Thailand, in which the GA method was combined with the ES method.
+No further reports about ES for prediction of exchange rates studies
+have been made.
+
+A differential evolution (DE) algorithm, combining the strengths of
+multiple strategies, was proposed by Worasucheep and
+Chongstitvatana \cite{Worasucheep2009} in 2009, but there is no
+further studies on the exchange rates determination by the DE or DE
+related methods.
+
+The particle swarm optimisation (PSO) method is one of the swarm
+intelligence algorithms, which is a population-based search
+algorithm following the social behaviour of individuals
+(particles) moving among a multi-dimensional searching space. The
+PSO method was applied to stock markets forecasting, by working with ANN,
+by Nenortaite and Simutis \cite{Nenortaite2004} in 2004, and by Zhao
+and Yang \cite{Zhao2009} in 2009, but neither reports on the PSO
+applications for exchange rates prediction.
+
+Genetic Algorithms (GA) were introduced in the 1970s by John Holland
+\cite{Holland1975} at the University of Michigan. Inspired by
+Darwin's theory of evolution, they apply three basic genetic
+operators - selection, crossover, and mutation - to a population
+of individuals. The practical problems are often characterised by
+several non-commensurable and competing measures of performance or
+objectives, with a number of restrictions imposed on the decision
+variables. The choice of a suitable compromise solution from all
+non-inferior alternatives is not only problem-dependent, it
+generally depends also on the subjective preferences of a decision
+agent. Thus, the final solution to the problem is the result of both
+an optimisation process and a decision process\cite{Chen_JAP_2011,Chen_AES_2011,Chen_OE_2011,Chen_CEC_2007}.
+
+%http://encarta.msn.com/dictionary_/Daffodil.html
+
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.15]{Mendel_Daffodil}
+%\caption{Daffodils with different hybrid characters}
+%\label{Mendel_Daffodil}
+%\end{figure}
+
+%Since ancient time, farmers and herders have been selectively
+%breeding their plants and animals to produce more useful hybrids.
+%Knowledge of the genetic mechanisms finally came as a result of
+%careful laboratory breeding experiments carried out and published by
+%Mendel in 1860s \cite{Mendel1865} \cite{O'Neil2009}. Through the
+%selective cross-breeding of common pea plants over many generations,
+%Mendel discovered that certain traits show up in offspring without
+%any blending of parental characteristics. For example, the pea flowers
+%are either purple or white - intermediate colors do not appear in the
+%offspring of cross-pollinated pea plants. Although Mendel's research
+%was with plants, the basic underlying principles of heredity that he
+%discovered apply also to people and animals, because the
+%mechanisms of heredity are essentially the same for all complex life
+%forms. For example, Figure \ref{Mendel_Daffodil} shows Daffodils with
+%different hybrid characters, such as colour - white (or whiteish) daffodils,
+%green, yellow, pink, orange, etc. - shape, and size.
+
+In recent years, a lot of literature has been proposed in the area
+of GA using Mendel's principles \cite{Mendel1865,O'Neil2009,Song1999,Park2001,Kadrovach2001,Kadrovach2002}. In this paper, a new GA
+method using Mendel's principles (Mendel-GA) is proposed,
+which includes the following differences to the standard GA method and
+previous research:
+\begin{list}{$$}
+%
+\item (1) In
+this paper, the Mendel operator is inserted after the selection
+operator, which can thus take advantage of the Mendel operator's local search
+ability, as shown in Figure \ref{Mendel_GA_workflow}. In previous researches \cite{Song1999,Park2001,Kadrovach2001,Kadrovach2002}, the Mendel operator was
+inserted into the GA process after the mutation operator. Based on mutation probability $P_m$, mutation may generate an unstable
+population, which will lead to polluted outputs for the whole evolutionary processes biologically and mathematically\cite{Ishibuchi2002,Furi2005}. Typically, the mutation operator is a randomly introduced changing of a binary bit from a `0' to
+a `1', and vice versa. The basic method of mutation is able to generate new recombination of improved solutions at a given rate, but the possibility of damage to the dominated population, loss of good solutions and convergence trend also occurs\cite{Zitzler1999,NAS2004,Haupt2004}. The Mendel operator will amplify such an unstable population
+with its local search ability from a micro evolutionary point of view. 
+%
+\item (2) Mendel's principles are represented by the Mendel
+operator, which is easily synchronised with the multi-objective
+GA processes, such as multiple objective genetic algorithm (MOGA)
+\cite{MOGA1993}, niched pareto genetic algorithm (NPGA)
+\cite{NPGA1994}, nondominated sorting genetic algorithm (NSGA)
+\cite{NSGA1994} and nondominated sorting genetic algorithm II
+(NSGAII) \cite{NSGAII2002}.
+%
+\item (3) The standard GA is based on Darwin's theory, which is
+represented by the differential survival, and reproductive success;
+in the Mendel-GA, Mendel's law is indicated by the equal
+gametes, which unite at random to form equal zygotes and reproduce
+equal plants throughout all stages of the life cycle.
+%
+\end{list}
+
+
+Exchange rates determination has been regarded as one of the most
+challenging applications of high frequency time series trading
+\cite{Lyons2001,Killeen2001,Payne2003,Tenti1996,Gujarati2004}, and, to provide the investors and researchers with more
+precise predictions, some different models have
+been depicted in which the prices follow a random walk
+phenomenon. This is suitable for GA with stochastic and non-linear
+searching ability.
+
+The Mendel-GA will be applied to the studies of empirical
+analysis on exchange rates determination, which can provide an
+evolutionary and computational method to the exchange rates
+determination problem. Specifically, it attempts to compare the
+performance of the Mendel-GA and the traditional estimation methods, for
+instance, the ordinary least square(OLS) or the linear least squares
+(LS) estimation. The OLS and LS are methods for estimating the
+unknown parameters in a linear regression model. These methods
+minimise the sum of squared distances between the observed
+responses in the data-set, and the responses predicted by the linear
+approximation. Compared with the OLS or LS, the Mendel-GA, by the evolutionary process,
+can handle linear and non-linear models with higher complexity, and it is flexible to be an active
+optimisation solver for switching from one prediction model to the
+others.
+
+\section{Exchange Rates Determination Model}
+\label{Exchange rates determination}
+
+
+In 2001, Kileen, Lyon, and Moore \cite{Killeen2001} found the
+co-integration relationship between exchange rates and cumulative
+order flow (COF), which is the proximate determinant of price in all
+microstructure models, and in 2003 Payne \cite{Payne2003} used
+non-standard vector autocorrelation to examine the causality of
+exchange rates from the order flow.
+
+The order flow is defined as the net of buyer and seller initiated
+currency transactions, which is taken as a measure of net
+buying pressure \cite{Lyons2001}. According to previous reports
+\cite{Obstfeld2000,Killeen2001,Payne2003,Reitz2007,Rime2008}, the order flow is intimately
+related to a broad set of current and expected macroeconomic
+fundamentals, and as such the order flow is regarded as a useful predictor
+of the movements in exchange rates.
+
+Microstructure approaches use order flow to proxy the information
+reflecting the movement of exchange rates. An intensive study by Lyons
+\cite{Obstfeld2000} in 2000 demonstrates that order flow contains
+information concerning the movements of exchange rates.
+
+
+By starting from the conventional exchange rates theories, the
+exchange rates can be expressed as the discounted present value of
+current and expected fundamentals as given in the equation
+(\ref{Mendel_exchange_rates_st}) \cite{Obstfeld2000,Killeen2001,Payne2003,Rime2008,Andersen2003}.
+
+\begin{equation}
+s_t = (1-b)\sum^\infty_{q=0} b^q E^m_t f(x_{t+q})
+\label{Mendel_exchange_rates_st}
+\end{equation}
+
+Where,
+\begin{list}{$$}
+%
+\item $\circ$ $s_t$ is the spot exchange rate,
+which is defined as the domestic price of foreign currency;
+%
+\item $\circ$ $b$ is the discount factor;
+%
+\item $\circ$ $q$ is the future periodic factor;
+%
+\item $\circ$ $f(x_{t})$ denotes the fundamentals at time $t$;
+%
+\item $\circ$ $x_t$ is the contemporaneous order flow;
+%
+\item $\circ$ $E^m_t f(x_{t+q})$  is the market-makers's expectations about
+future fundamentals at $q$-periods after time $t$, conditional on information
+available at time $t$;
+\end{list}
+
+Specifically, the relation between the spot exchange rates $s_t$
+and the contemporaneous order flow $x_t$ can be specified as follows,
+by iterating equation (\ref{Mendel_exchange_rates_st}) forward and
+rearranging terms one as given in equation
+(\ref{Mendel_exchange_rates_deltast}): % HERE
+
+\begin{equation}
+\Delta s_{t+1} = \displaystyle \frac{1-b}{b}\left( s_t - E^m_t
+f(x_t) \right) + {\varepsilon_{t+1}}
+\label{Mendel_exchange_rates_deltast}
+\end{equation}
+
+where,
+%
+\begin{list}{$$}
+%
+\item $\circ$ $\Delta$ denotes the first-difference of the series;
+%
+\item $\circ$ $\varepsilon_t$ is the disturbance term, as stated in
+equation (\ref{Mendel_exchange_rates_varepsilon})
+\cite{Bacchetta2006}, which shows that the future exchange rates
+change is a function of the gap between the current exchange rates
+and the expected current fundamentals. It is also a term
+that captures changes in expectations about fundamentals;
+
+\begin{equation}
+\varepsilon_{t+1} = (1-b)\sum^\infty_{q=0} b^q \left( E^m_{t+1}
+f(x_{t+q+1}) - E^m_{t} f(x_{t+q+1}) \right)
+\label{Mendel_exchange_rates_varepsilon}
+\end{equation}
+%
+\end{list}
+
+
+
+Purchasing foreign currency increases the demand of the foreign
+currency, leading to an appreciation of the foreign currency, and a
+depreciation of the domestic currency, i.e., the spot exchange rates
+$s_t$ get increased. We expect a positive correlation between the
+spot exchange rates and the corresponding order flow.
+
+
+
+\section{ Genetic Algorithm using Mendel's Principles  }
+\label{Multi-objective Genetic Algorithm using Mendel's Principles}
+
+Mendel's principles (some biologists refer to Mendel's `principles'
+as `laws') have always applyed to the genetically reproducing
+creature in a natural environment. Mendel's conclusions from these pea
+experiments can be summarized in two principles \cite{Mendel1865,O'Neil2009,Marks2008}:(i) the principle of segregation - for any particular trait, the
+pair of alleles of each parent separate, and only one allele passes
+from each parent on to an offspring;(ii) the principle of independent assortment - different pairs of
+alleles are passed to offspring independently of each other.
+%
+%\end{list}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.17]{Mendel_GA_workflow}
+\caption{Genetic algorithm using Mendel's principles workflow}
+\label{Mendel_GA_workflow}
+\end{figure}
+
+According to Mendel's experiments in plant hybridisation, the
+striking regularity with which the same hybrid forms (colour, shape, etc.)
+always reappeared whenever fertilisation took place between the same
+species demanded further experiments to be undertaken. As shown in Figure \ref{Mendel_GA_workflow}, we have included Mendel's
+principles in GA's overall evolution framework, which
+can describe the accurate heredity meiosis process from a micro
+evolution point of view in a GA process. A GA using Mendel's principles
+can be defined as when a Mendel genetic operator is introduced into the GA
+methods mentioned above, and then applied to the optimisation
+studies and parameters estimation for the regression modelling of
+the exchange rates determination.
+
+
+%D:\Working\SGALAB1003\SGALAB_PPT\FIGS
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.15]{Mendel_parents_offspring}
+\caption{Mendel operator: parents to offsprings }
+\label{Mendel_parents_offspring}
+\end{figure}
+
+\begin{table}[h!]
+%\begin{sidewaystable}[ht!]
+  \centering
+  \caption{Mendel punnet-square for 1-bit chromosome}
+%   \scriptsize % re-set the font size for the table
+    \begin{tabular}{r|c|ccc}
+    \addlinespace
+    \toprule
+    \multicolumn{2}{c}{} & \multicolumn{3}{c}{$attrP_1$}  \\
+%    \midrule
+     \cmidrule{3-5}
+    \multicolumn{2}{c} {{$attrO$}} &{{$D$}} & { {$H$}} & { { $R$}}\\ \cmidrule{3-5}
+    { }     & { { $D$}} & $100\% D$ &   $\begin{matrix} 50\% D \\ 50\% H \end{matrix}$     & $100\% H$    \\
+    { }     &  \\
+    {$attrP_2$} & { { $H$}} & $\begin{matrix} 50\% D \\ 50\% H \end{matrix}$    & $\begin{matrix} 25\% D \\ 50\% H \\ 25\% R  \end{matrix}$    & $\begin{matrix} 50\% R \\ 50\% H \end{matrix}$  \\
+    { }     &  \\
+    { }     & { { $R$}} & $100\% H$    & $\begin{matrix} 50\% R \\ 50\% H \end{matrix}$    & $100\% R$   \\
+       \bottomrule
+    \end{tabular}
+\label{Mendel_punnet_square}
+\end{table}
+
+\section{Mendel Operator }
+\label{Mendel_Operator}
+
+In this paper, the binary encoding method is utilised for the Mendel-GA's encoding/decoding operation. Typically, all bits(genes) of a chromosome could be encoded using the two binary alphabets `1' and `0', in which, `1' represents a gene is active and `0' is inactive.
+
+As shown in Figure \ref{Mendel_parents_offspring}, `0' and `1' are
+the two bit-values of the binary encoded chromosome, and the
+chromosome length, or bits number, for the Mendel's genetic operator
+is called Mendel's percentage ($MP$), where $MP$ is a
+proportionality factor, included to balance the bits length of the
+parental chromosome. %Clearly, $MP$ = 0 means no bit is involved
+%in current generation of evolution, and $MP$ = 1 means all bits
+%of the the parental chromosome are involved in the evolution, $MP$
+%$\in$ [0,1] or [0,100$\%$].
+The Mendel operator generates the offspring's chromosomes
+($x_{{O}_i}$) from the parent's chromosomes ($x_{{P}_i}$) according
+to every bit's attribute, which is defined by the
+Punnet-square\cite{Mendel1865,O'Neil2009}. Two parental
+chromosomes $x_{{P}_1}$ and $x_{{P}_2}$ can generate one child
+chromosome $x_{{O}_1}$, as shown in Figure
+\ref{Mendel_parents_offspring}; to obtain the second child
+chromosome $x_{{O}_2}$, the productive process need to be repeated.
+
+
+As stated in Table \ref{Mendel_punnet_square}, in the Punnet-square
+for the Mendel operator, each chromosome bit is assigned an
+attribute, which indicates the type of the gene's corresponding
+character. There are three types of attributes of a gene: $D$(Dominant, the pure and dominant gene),
+$R$(Recessive, the pure and recessive gene), and $H$(Hybrid, the
+hybrid gene). $attrP_1$ and $attrP_2$ are the attributes of a
+bit of the parental chromosomes $x_{{P}_1}$ and $x_{{P}_2}$, $attrO$
+is the attribute of a bit of a children chromosome $x_{{O}_1}$ or
+$x_{{O}_2}$. 
+
+%%%By Table \ref{Mendel_punnet_square}, it can be
+%%%clarified that:
+%%%%\begin{framed}
+%%%\begin{list}{$$}
+%%%% Rule - 1
+%%%\item $\langle1\rangle$ IF   $attrP_1$  = $D$ AND
+%%%\begin{list}{$$}
+%%%% 1
+%%%        \item   IF  $attrP_2$  = $D$,
+%%%                THEN $attrO$   = $100\% D$;
+%%%% 2
+%%%        \item   IF  $attrP_2$  = $H$,
+%%%                THEN $attrO$   = $50\% D$ or $50\% H$;
+%%%% 3
+%%%        \item   IF  $attrP_2$  = $R$,
+%%%                THEN $attrO$   = $100\% H$;
+%%%%
+%%%\end{list}
+%%%
+%%%% Rule - 2
+%%%\item $\langle2\rangle$ IF   $attrP_1$  = $H$ AND
+%%%\begin{list}{$$}
+%%%% 1
+%%%        \item   IF  $attrP_2$  = $D$,
+%%%                THEN $attrO$   = $50\% D$ or $50\% H$;
+%%%% 2
+%%%        \item   IF  $attrP_2$  = $H$,
+%%%                THEN $attrO$   = $25\% D$ or $50\% H$ or $25\% R$;
+%%%% 3
+%%%        \item   IF  $attrP_2$  = $R$,
+%%%                THEN $attrO$   = $50\% R$ or $50\% H$;
+%%%%
+%%%\end{list}
+%%%
+%%%% Rule - 3
+%%%\item $\langle3\rangle$ IF   $attrP_1$  = $R$ AND
+%%%\begin{list}{$$}
+%%%% 1
+%%%        \item   IF  $attrP_2$  = $D$,
+%%%                THEN $attrO$   = $100\% H$;
+%%%% 2
+%%%        \item   IF  $attrP_2$  = $H$,
+%%%                THEN $attrO$   = $50\% R$ or $50\% H$;
+%%%% 3
+%%%        \item   IF  $attrP_2$  = $R$,
+%%%                THEN $attrO$   = $100\% R$;
+%%%%
+%%%\end{list}
+%%%\end{list}
+%%%%\end{framed}
+
+%\begin{algorithmic}
+%  \IF{some condition is true}
+%    \STATE do some processing
+%  \ELSIF{some other condition is true}
+%    \STATE do some different processing
+%  \ELSIF{some even more bizarre condition is met}
+%    \STATE do something else
+%  \ELSE
+%    \STATE do the default actions
+%  \ENDIF
+%\end{algorithmic}
+
+
+%According to Mendel's principles, the hybridisation is the
+%process of combining different attributes of all bits of the
+%chromosomes to create the offspring bits with Punnet-square driven
+%attributes. Compared with a crossover operator or a mutation
+%operator, the Mendel operator performs with a Punnet-square driven
+%behaviour.
+
+
+%http://mechanismsevo.blogspot.com/2007/10/mendels-laws.html
+
+\section{Fitness Function Definition}
+\label{Fitness Function Design}
+
+
+\subsection{Measure of the goodness of fit - the coefficient of determination}
+\label{R_sq}
+
+Regression analysis is the investigation of the functional
+relationship between two or more variables, in which the coefficient
+of determination($R^2$) is a quantity in the regression models used
+to measure the proportion of total variability in the response
+accounted for, by the model in Figure \ref{R2definition}
+\cite{Gujarati2004,Montgomery2003}, and the larger values of
+$R^2$(near unity) are considered the better of the variability in
+the data, as given in equation
+(\ref{Mendel_coefficient_determination}).
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.23]{R2definition}
+\caption{The coefficient of determination($R^2$) definition
+\cite{Gujarati2004,Montgomery2003}} \label{R2definition}
+\end{figure}
+
+\begin{equation}
+R^2 \left( y_i,\hat{y}_i \right) = 1 -  \frac{SS_{err}}{SS_{tot}} =
+1 - \frac{\sum\limits_{i = 1}^k{ \left( y_i - \hat{y}_i
+\right)^2}}{\sum\limits_{i = 1}^k{ \left( y_i - \bar{y}_i
+\right)^2}}
+\label{Mendel_coefficient_determination}
+\end{equation}
+
+%http://en.wikipedia.org/wiki/Coefficient_of_determination
+%In this form R2 is given directly in terms of the explained
+%variance: it compares the explained variance (variance of the
+%model's predictions) with the total variance (of the data).
+
+where,
+\begin{list}{$$}
+%
+\item $\circ$ $R^2$ is the coefficient of determination for the two given data sequences $y_i$ and $\hat{y}_i$, as shown in Figure \ref{R2definition}, $y_i$ is the dashed data and $\hat{y}_i$ is the dotted data;
+%
+\item $\circ$ $y_i$ is the observed data,
+which is the exchange trade data \cite{Evans2002};
+%
+\item $\circ$ $\hat{y}_i$ is the specimen data,
+which obtained from the Mendel-GA over the evaluating process;
+%
+\item $\circ$ $\bar{y}_i$ is the mean value of the observed data $y_i$;
+%
+\item $\circ$ $k$ is the sample size of both two given data sequences $y_i$ and $\hat{y}_i$.
+%
+\item $\circ$ $SS_{tot}$ is the total corrected sum of squares,
+as given in equation (\ref{Mendel_coefficient_determination_SS_tot})
+\cite{Gujarati2004,Montgomery2003};
+%
+\begin{equation}
+SS_{tot} = \sum\limits_{i = 1}^k{ \left( y_i - \bar{y}_i \right)^2}
+\label{Mendel_coefficient_determination_SS_tot}
+\end{equation}
+%
+\item $\circ$ $SS_{err}$ is the residual sum of squares,
+as given in equation(\ref{Mendel_coefficient_determination_SS_err})
+\cite{Gujarati2004,Montgomery2003}, which is the objective of
+the traditional OLS estimation, and the OLS method is to minimise
+the $SS_{err}$.
+
+%
+\begin{equation}
+SS_{err} = \sum\limits_{i = 1}^k{ \left( y_i - \hat{y}_i \right)^2}
+\label{Mendel_coefficient_determination_SS_err}
+\end{equation}
+%
+\end{list}
+
+
+Meanwhile, $R^2$ also measures the
+proportion of the variance in the dependent variable explained by
+the independent variable \cite{Allen2007}, so that, equation (\ref{Mendel_coefficient_determination}) can be re-written as equation equation (\ref{Mendel_coefficient_determination_variance}) in terms of the variances, which compares the
+explained variance $\sigma^2_{e}$
+with the total variance $\sigma^2_{y}$.
+
+\begin{equation}
+R^2 \left( y_i,\hat{y}_i \right)  = 1 - \displaystyle
+\frac{\sigma^2_{e}}{\sigma^2_{y}} 
+%= 1 - \displaystyle \frac{
+%\sum\limits_{i = 1}^k{ \left( y_i - \hat{y}_i
+%\right)^2}}{\sum\limits_{i =1}^k{ \left( y_i - \bar{y}_i \right)^2}}
+%R^2 \left( y_i,\hat{y}_i \right)  = 1 - \displaystyle
+%\frac{\sigma^2_{e}}{\sigma^2_{y}} = \displaystyle \frac{
+%\displaystyle \frac{\sum\limits_{i = 1}^k{ \left( y_i - \hat{y}_i
+%\right)^2}}{k}}{\displaystyle \frac{\sum\limits_{i =1}^k{ \left( y_i
+%- \bar{y}_i \right)^2}}{k}}
+\label{Mendel_coefficient_determination_variance}
+\end{equation}
+
+where,
+\begin{list}{$$}
+\item $\circ$ $\sigma^2_{e}$ is the explained variance, which is the variance of the model's
+predictions, as given in equation
+(\ref{Mendel_coefficient_determination_sigma_e});
+%
+\begin{equation}
+\sigma^2_{e} = \displaystyle \frac{\sum\limits_{i = 1}^k{ \left( y_i
+- \hat{y}_i \right)^2}}{k} = \displaystyle \frac{SS_{err}}{k}
+\label{Mendel_coefficient_determination_sigma_e}
+\end{equation}
+%
+\item $\circ$ $\sigma^2_{y}$ is the total variance,
+as given in equation(\ref{Mendel_coefficient_determination_sigma_y});
+%
+\begin{equation}
+\sigma^2_{y} = \displaystyle \frac{ \sum\limits_{i = 1}^k{ \left(
+y_i - \bar{y}_i \right)^2}}{k} = \displaystyle \frac{SS_{tot}}{k}
+\label{Mendel_coefficient_determination_sigma_y}
+\end{equation}
+\end{list}
+
+%http://en.wikipedia.org/wiki/Coefficient_of_determination
+%http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/learn_matlab/bq45say-1.html
+
+\subsection{ Fitness Function of Regression Modelling }
+\label{Fitness Function Design}
+
+To order to evaluate the performance of the Mendel-GA comparison
+process with the existing exchange rates and COF feature, the $R^2$
+has been borrowed for the fitness function definition, which is a
+statistical measurement of the agreement between the observed data
+sequence $y_i$ and the Mendel-GA generated specimen data sequence
+$\hat{y}_i$.
+
+
+%http://en.wikipedia.org/wiki/Coefficient_of_determination
+%http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/learn_matlab/bq45say-1.html
+%$\varepsilon$ is a small value parameter and $\varepsilon$ $\rightarrow$ 0, which helps to avoid $J$ $\rightarrow$ $\infty $.
+
+%SGALAB Mendel-GA.vsd
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.17]{Mendel_orginal_data_prehandling}
+\caption{ Original data pre-handling process and fitness function
+generation} \label{Mendel_orginal_data_prehandling}
+\end{figure}
+
+Using the basic idea of the $R^2$, the association between exchange
+rates and COF is specified as equation \ref{Mendel_regression_exp},
+we define the fitness function as equation
+\ref{Mendel_regression_fitness}, which aims to use the Mendel-GA to
+find the best parameters that make the $R^2$ approaching to the
+maximal.
+
+\begin{equation}
+\Delta \hat{y}_i(t) = \beta_1 + \beta_2 \Delta x_i(t) + \beta_3
+\Delta y_i(t-1)\label{Mendel_regression_exp}
+\end{equation}
+
+\begin{equation}
+J = fitness(\beta_1, \beta_2, \beta_3) \rightarrow R^2(\Delta
+\hat{y}_i, \Delta {y}_i) \label{Mendel_regression_fitness}
+\end{equation}
+
+where,
+\begin{list}{$$}
+%
+\item $\circ$ $\Delta \hat{y}_i(t)$ is the estimated(modelling) value from the
+regression model at time $t$;
+%
+\item $\circ$ $\beta_1$, $\beta_2$ and $\beta_3$ are known
+as the intercept coefficient, slope coefficient and historical data
+coefficient, respectively;
+%
+\item $\circ$ $x_i$ is the observed COF of a foreign currency;
+%
+\item $\circ$ $y_i$ defines the ratio of a foreign currency vs. US. dollar in
+$\log(*)$ space. Equations (\ref{Mendel_yi_USD}) and
+(\ref{Mendel_yi_JPY}) are the data scaling operations for the cases of Deutsche Mark vs. US. Dollar
+and Japanese Yen vs. US. Dollar, respectively;
+%
+\begin{equation}
+y_i =  \displaystyle  \log\left(\displaystyle
+ \frac{DM}{USD}\right) \times 10000 \label{Mendel_yi_USD}
+\end{equation}
+
+\begin{equation}
+y_i =  \displaystyle  \log\left(\displaystyle
+ \frac{JPY}{USD}\right) \times 10000 \label{Mendel_yi_JPY}
+\end{equation}
+
+%
+\item $\circ$ $\Delta x_i(t)$ and $\Delta y_i(t-1)$ are the difference data sequence
+obtained from the pre-data handling process at time $t$ and $t-1$,
+as stated in equations (\ref{Mendel_delta_xi}) and
+(\ref{Mendel_delta_yi});
+
+\begin{equation}
+\Delta x_i(t) =  x_i(t) -  x_i(t-1)
+\label{Mendel_delta_xi}
+\end{equation}
+
+\begin{equation}
+\Delta y_i(t-1) =  y_i(t-1) -  y_i(t-2) \label{Mendel_delta_yi}
+\end{equation}
+%
+\end{list}
+
+
+As can be seen from equation (\ref{Mendel_coefficient_determination}), the numerical simulation generates tiny errors by ($y_i - \hat{y}_i$) and ($y_i - \bar{y}_i$) which could cause the loss of precision. By the scaling factor the numerical errors can be scaled to an acceptable numerical range for the computing precision protection. The scaling factor can be selected on a case-by-case basis. As shown in Figure \ref{Mendel_orginal_data_prehandling}, in order
+to reduce the possibility of numerical simulation error, the data
+sequence $y_i$ has been scaled to a quantity by times a scaling factor (a constant) 10000 for the cases of DM vs. USD and JPY vs. USD. Then, generate the difference data sequence of $\Delta x_i$
+and $\Delta y_i$, and the next step is to generate the fitness
+function by the equation (\ref{Mendel_regression_fitness}).
+
+
+
+\section{Empirical Results and Discussions }
+\label{Simulation}
+
+The original exchange rates data came from Evans and Lyons
+\cite{Evans2002} in 2002, in which there are two groups of trading
+data:
+\begin{list}{$$}
+%
+\item $\circ$ Data-I: First trading data pair of Deutsche Mark (DM) vs. US. Dollar
+(USD); % - $\log(DM/USD)$ - $x_i$ vs. COF - $y_i$,
+%
+\item $\circ$ Data-II: Second trading data pair of Japanese Yen (JPY) vs. US. Dollar (USD);
+% - $\log(JPY/USD)$ - $x_i$ vs. COF - $y_i$.
+\end{list}
+
+Empirical results are obtained using a specially devised simulation
+toolkit of Mendel-GA for $MATLAB$, known henceforth here as $SGALAB$
+\cite{sgalab2009}. Unless stated otherwise all the results are
+generated using the following parameters of the genetic algorithms
+as listed in Table \ref{tableGA}, in which binary encoding/decoding,
+tournament selection, single point crossover and mutation are
+utilised by the Mendel-GA evolutionary process. The Mendel-GA's
+results are also compared to the results of standard GA and OLS
+methods.
+
+%Table 1. GA parameters
+\begin{table}[h!]
+\caption{Empirical parameters for Mendel-GA } % title of Table
+\centering % used for centering table
+\begin{tabular}{lll}
+\hline
+               & max generations                               & 100         \\
+%\hline
+               & crossover probability                        & 0.8          \\
+%\hline
+               & mutation probability                         & 0.001        \\
+%\hline
+               & population                                   & 50          \\
+%\hline
+               & selection operator                           & tournament   \\
+%\hline
+               & crossover operator                           & single point \\
+%\hline
+               & mutation operator                            & single point \\
+%\hline
+               & encoding method                              & binary     \\
+%\hline
+$\beta_1$   & regression parameter   & $[ -10 , 10 ]$  \\
+%\hline
+$\beta_2$   & regression parameter   & $[ 0 , 5]$  \\
+%\hline
+$\beta_3$   & regression parameter   & $[ -1 , 1]$  \\
+%\hline
+$ $         & Mendel percentage      & 1 (full chromosome length)  \\
+%\hline
+$ $         & number of simulations & 1000  \\
+%\hline
+\hline
+\end{tabular}
+\label{tableGA} % is used to refer this table in the text
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{Mendel_fitness_dm}
+\caption{Data-I (DM vs. USD) evolutionary fitness data }
+\label{Mendel_fitness_dm_dollar}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{Mendel_fitness_yen}
+\caption{Data-II (JPY vs. USD) evolutionary fitness data}
+\label{Mendel_fitness_yen_dollar}
+\end{figure}
+
+
+
+
+%Table 1. GA parameters
+\begin{table}[h!]
+\caption{Mendel-GA results of mean for data-I (DM vs. USD) } % title of Table
+\centering % used for centering table
+\begin{tabular}{llll}
+\hline
+%\hline
+            & Mendel-GA  & SGA       & OLS \\
+\hline
+E[$\beta_1$]   & -4.9297  & -4.9251 &  -4.9143 \\
+%\hline
+E[$\beta_2$]   & 0.2211   & 0.2203  & 0.2194 \\
+%\hline
+E[$\beta_3$]   & 0.1490   & 0.1478  & 0.1399 \\
+%\hline
+E[$R^2$]       & 0.6520  & 0.6415 & 0.6400 \\
+%\hline
+\hline
+\end{tabular}
+\label{tableGAresults_DM_mean} % is used to refer this table in the text
+\end{table}
+
+%Table 1. GA parameters
+\begin{table}[h!]
+\caption{ Mendel-GA results of variance for data-I (DM vs. USD) } % title of Table
+\centering % used for centering table
+\begin{tabular}{llll}
+\hline
+%\hline
+                 & Mendel-GA    & SGA          & OLS \\
+\hline
+VAR[$\beta_1$]   & 0.2341       & 0.2572       & - \\
+%\hline
+VAR[$\beta_2$]   & 0.00233      & 0.00242      & - \\
+%\hline
+VAR[$\beta_3$]   & 0.0013       & 0.0018       & - \\
+%\hline
+VAR[$R^2$]       & 0.012        & 0.016        & - \\
+%\hline
+\hline
+\end{tabular}
+\label{tableGAresults_DM_var} % is used to refer this table in the text
+\end{table}
+
+
+%Table 1. GA parameters
+\begin{table}[h!]
+\caption{ Mendel-GA results of mean for data-II (JPY vs. USD)} % title of Table
+\centering % used for centering table
+\begin{tabular}{llll}
+\hline
+              & Mendel-GA   & SGA     & OLS \\
+\hline
+E[$\beta_1$]   &  -4.9625   & -4.9012  & -4.8334 \\
+%\hline
+E[$\beta_2$]   &  0.3185    & 0.3035   & 0.2952 \\
+%\hline
+E[$\beta_3$]   &  -0.1411   & -0.1402  &  -0.1396\\
+%\hline
+E[$R^2$]       &   0.4073   &  0.4064  &  0.40 \\
+%\hline
+\hline
+\end{tabular}
+\label{tableGAresults_JPY_mean} % is used to refer this table in the text
+\end{table}
+
+
+%Table 1. GA parameters
+\begin{table}[h!]
+\caption{ Mendel-GA results of variance for data-II (JPY vs. USD) } % title of Table
+\centering % used for centering table
+\begin{tabular}{llll}
+\hline
+%\hline
+                 & Mendel-GA  & SGA        & OLS \\
+\hline
+VAR[$\beta_1$]   & 0.2343     & 0.2532     &  -\\
+%\hline
+VAR[$\beta_2$]   & 0.00112    & 0.00127    &  - \\
+%\hline
+VAR[$\beta_3$]   & 0.0025     & 0.0031     &  - \\
+%\hline
+VAR[$R^2$]       & 0.0025     &  0.0037    &  - \\
+%\hline
+\hline
+\end{tabular}
+\label{tableGAresults_JPY_var} % is used to refer this table in the text
+\end{table}
+
+
+As listed in Table \ref{tableGA}, the total empirical number is
+1000. For the fitness results, the max, min and mean values of
+fitness are calculated to show the Mendel-GA's single-run
+performance ($fitmax_i$,$fitmin_i$ and $fitmean_i$), and for the
+Mendel-GA's 1000 total experiments, as shown in Figures
+\ref{Mendel_fitness_dm_dollar} and \ref{Mendel_fitness_yen_dollar},
+the plots for the average data of all the $fitmax_i$,$fitmin_i$ and
+$fitmean_i$ over the 1000 experiments are expressed.
+
+Meanwhile, for the Mendel-GA's 1000 total experiments, the mean E(*)
+and the variance VAR(*) of the max fitness values of all experiments
+are evaluated as the Mendel-GA's overall performance indexes, as
+stated in Tables \ref{tableGAresults_DM_mean},
+\ref{tableGAresults_DM_var}, \ref{tableGAresults_JPY_mean} and
+\ref{tableGAresults_JPY_var}.
+
+
+Figure \ref{Mendel_fitness_dm_dollar} and Figure
+\ref{Mendel_fitness_yen_dollar} describe the evaluation process of
+the Data-I (DM vs. USD) fitness values , and the Data-II (JPY vs.
+USD) fitness values, respectively. Over the full evolution time
+defined by max generation, the fitness values grow up quickly to a
+steady status with the initial parameters in Table \ref{tableGA}.
+The solid lines in Figure \ref{Mendel_fitness_dm_dollar} and Figure
+\ref{Mendel_fitness_yen_dollar} are the mean value of the average of
+total fitness, the fitness data marked as `+' in the top are max
+value of the average of total fitness, and the fitness data marked
+as `+' in the bottom are the min value of the average of total
+fitness.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{Mendel_deltax_deltay_dm_dollar}
+\caption{ Sampling and modelling $\Delta x_i$ vs. $\Delta y_i$ for
+Data-I (DM vs. USD)} \label{Mendel_deltax_deltay_dm_dollar}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{Mendel_deltax_deltay_yen_dollar}
+\caption{Sampling and modelling $\Delta x_i$ vs. $\Delta y_i$ for
+Data-II (JPY vs. USD)} \label{Mendel_deltax_deltay_yen_dollar}
+\end{figure}
+
+In Tables \ref{tableGAresults_DM_mean}, \ref{tableGAresults_DM_var},
+the mean and variance results of Data-I (DM vs. USD) are listed.
+Specifically, in Table \ref{tableGAresults_DM_mean}, the
+E[$\beta_1$], E[$\beta_2$] and E[$\beta_3$] of Mendel-GA, standard
+GA and OLS are close to each other respectively. Among three of the
+E[$R^2$] of Mendel-GA, standard GA and OLS, the Mendel-GA's E[$R^2$]
+is the largest, the standard GA's E[$R^2$] is the second largest and
+OLS's E[$R^2$] is the smallest, which indicate that the Mendel-GA
+outperforms the two others.
+
+Table \ref{tableGAresults_DM_var} shows that the VAR[$\beta_1$],
+VAR[$\beta_2$] and VAR[$\beta_3$] of Mendel-GA, standard GA and OLS
+are slightly different to each other, and the Mendel-GA's VAR[$R^2$]
+is smaller than the standard GA's, which means the Mendel-GA's
+results stay in a smaller scattered range than the standard GA's.
+The OLS's VAR[*] values are zero because it is solved not by the
+traditional numerical methods, whose results are the same every
+experiment.
+
+
+Similarity, Table \ref{tableGAresults_JPY_mean} and
+\ref{tableGAresults_JPY_var} are the mean and variance results of
+Data-II (JPY vs. USD), which provide the evidence to show the
+Mendel-GA's better searching ability than the standard GA and OLS.
+
+
+
+As shown in Figure \ref{Mendel_deltax_deltay_dm_dollar} and Figure
+\ref{Mendel_deltax_deltay_yen_dollar}, the `o' data points are from
+the sampling data, `*' are the data points from regression modelling
+in equation \ref{Mendel_regression_exp}, they both show how the
+regression model estimating the exchange rates trading behaviour.
+The estimation for $\beta_1$, $\beta_2$ and $\beta_3$ are given in
+Tables \ref{tableGAresults_DM_mean} and Table
+\ref{tableGAresults_JPY_mean}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{Mendel_beta3_deltadm}
+\caption{$\beta_3$ vs. $\Delta$ $\log(DM/USD)$ when ($\beta_1$ =
+$-4.9297$, $\beta_2$ = $0.2211$ )} \label{Mendel_beta3_deltadm}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{Mendel_beta3_deltayen}
+\caption{$\beta_3$ vs. $\Delta$ $\log(JPY/USD)$ when ($\beta_1$ = $
+-4.9625$, $\beta_2$ = $0.3185$ )} \label{Mendel_beta3_deltayen}
+\end{figure}
+
+According to the simulation results from Mendel-GA method, $\beta_1$
+and $\beta_2$ are in a relative steady status, and $\beta_3$ shows
+how the history data of $\Delta y_i(t-1)$ can lead the estimating
+data $\Delta \hat{y}(t)$. The Figure \ref{Mendel_beta3_deltadm} and
+Figure \ref{Mendel_beta3_deltayen} show how the $\beta_3$ taking
+effects on the $R^2$, which measures the performance of regression
+modelling.
+
+As shown in Tables \ref{tableGAresults_DM_mean} and
+\ref{tableGAresults_JPY_mean}, comparing with the study of Evans and
+Lyons \cite{Evans2002}, the coefficient of determination get
+improved: for dm/dollar, the coefficient of determination gets
+improved from 60$\%$ $\rightarrow$ 64$\%$; and for yen/dollar, the
+coefficient of determination gets a little bit improved, from 40$\%$
+$\rightarrow$ 40.73$\%$.
+
+\section{Conclusions}
+\label{Conclusions}
+
+Interestingly, we find the variation involved in the association
+between $\beta_3$ and the coefficient of determination. In the case
+of dm/dollar, $\beta_3$ is positive to make the coefficient of
+determination get minimum while in the case of yen/dollar, $\beta_3$
+is negative to make the coefficient of determination get minimum, which reflects different feedback trading behaviours in the different cases of the foreign exchange market.
+
+For Data-I (DM vs. USD), it indicates a positive trend tracing
+behaviour, which means over the sample period positive exchange
+rates return induces buyer dominant trading behaviour. However, in
+the case of Data-II (JPY vs. USD), the results suggest that a
+positive exchange rates return induce a reverse trading behaviour.
+
+According to the simulation results for Data-I (DM vs. USD) and
+Data-II (JPY vs. USD), it is showing significant positive
+association between exchanger rates return and the corresponding
+order flow change, which is consistent with the theoretical
+hypothesis.
+
+Compared with the results of Mendel-GA, standard GA and OLS, it
+indicates that the Mendel-GA outperformed the standard GA and OLS
+methods, which add to the research efforts to bridge the divide
+between macro and micro approaches to exchange rate economics by
+examining the linkages between exchange rates movement, cumulative
+order flow and expectations of macroeconomic variables.
+
+\section{Future Works}
+
+For trading decisions, the technical analysis is sometimes utilised
+to assist traders make buying and selling decisions, which is trying
+to take good advantage of the available time-series data. This paper
+provides an evolutionary alternative of exchange rates
+determination, which differs from conventional econometrical
+methods, and we are trying to apply this proposed technique on some more trading date set in practices.
+
+Meanwhile, the integration of experts' skills into this model is
+considered to be essential for trading decision making purpose. In
+further studies, fuzzy logic system will be used for developing
+decision models in which the experience of a trader can be
+incorporated in a natural or artificial way.
+
+This paper's results suggest some interesting issues for further
+investigation on the real-time trading policy making, in which the
+$R^2$ will be one of the trading decision criteria, for example,
+Value-at-Risk (VaR) with volatility predictions.
+
+
+%\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgements}
+{\it 
+The authors would like to acknowledge the partial supports provided by 
+the National Natural Science Foundation of China (NSFC) No.51105061 and No. 30872183. 
+
+Also, the authors would like to acknowledge the anonymous reviewers
+with their valuable comments for this paper. }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% BibTeX users please use one of
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+%\bibliographystyle{spmpsci}      % mathematics and physical sciences
+%\bibliographystyle{spphys}       % APS-like style for physics
+%\bibliography{}   % name your BibTeX data base
+\bibliographystyle{alpha}
+% Non-BibTeX users please use
+\begin{thebibliography}{00}
+
+
+%1
+\bibitem{Obstfeld2000} M. Obstfeld, K. Rogoff,
+             The six major puzzles in international macroeconomics: is there a common cause?, NBER Working Papers 7777 (2000).
+
+%2
+\bibitem{Rogoff1996} K. Rogoff,
+             The purchasing power parity puzzle,
+             Journal of Economic Literature 34 (1996) 647-668.
+
+%3
+\bibitem{Lyons2001} R. Lyons,
+             The Microstructure Approach to Exchange Rates,
+             London, England, MIT Press, 2001.
+
+%4
+\bibitem{Killeen2001} W.P. Killeen, R.K. Lyons, M.J. Moore ,
+             Fixed versus flexible: lessons from ems order flow,
+             Journal of International Money and Finance 25 (2006) 551-579.
+%5
+\bibitem{Payne2003} R. Payne,
+             Informed trade in spot foreign exchange markets: an empirical investigation,
+             Journal of International Economics, 61 (2003) 307-329.
+
+%6
+\bibitem{Hann1996} T.H. Hann, E. Steurer, Much ado about nothing? exchange rate forecasting: neural networks vs. linear models using
+monthly and weekly data, Neurocomputing 10 (1996) 323-339.
+
+
+%7
+\bibitem{Qi2003} M. Qi and Y. Wu,
+Nonlinear prediction of exchange rates with monetary
+fundamentals, Journal of Empirical Finance 10 (2003) 623-640.
+
+%8
+\bibitem{Yadav2007} R.N. Yadav, P.K. Kalra, J. John,
+Time series prediction with single multiplicative neuron model,
+Applied Soft Computing 7 (2007) 1157-1163.
+
+
+%9
+\bibitem{Rimcharoen2005}
+S. Rimcharoen, D. Sutivong, P. Chongstitvatana, Prediction of the
+stock exchange of thailand using adaptive evolution strategies,
+Proceedings of the 17th IEEE International Conference on Tools with
+Artificial Intelligence, IEEE Computer Society, Washington, DC, USA
+(2005)
+
+%10
+\bibitem{Worasucheep2009} C. Worasucheep and P. Chongstitvatana,
+A multi-strategy differential evolution algorithm for financial,
+Prediction with Single Multiplicative Neuron, ICONIP 2009, Part
+II, LNCS 5864 (2009) 122-130. 
+
+%11
+\bibitem{Nenortaite2004} J. Nenortaite, R. Simutis,
+Stocks' Trading System Based on the Particle Swarm Optimization
+Algorithm, Workshop on Computational Methods in Finance and
+Insurance, Springer, Lecture Notes in Computer Science 3039/2004 (2004) 843-850.
+
+%12
+\bibitem{Zhao2009}
+L. Zhao, Y. Yang, Expert systems with applications: pso-based
+single multiplicative neuron model for time series prediction,
+Expert Systems with Applications 36 (2009) 2805-2812.
+
+%13
+\bibitem{Holland1975} J.H. Holland,
+         Adaptation in Natural and Artificial Systems,
+              the University of Michigan Press, 1975.
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\bibitem{Chen_JAP_2011} Yi Chen, Yong Ma, Zheng Lu, Bei Peng, Qin Chen,
+         Quantitative Analysis of Terahertz Spectra for Illicit Drugs using Adaptive-range Micro-genetic Algorithm,
+         Journal of Applied Physics, 
+         Volume 110, Issue 4, Pages 044902-10, (2011)
+              
+\bibitem{Chen_AES_2011}
+Yi Chen, Yong Ma, Zheng Lu, Lixia Qiu, Jin He, Terahertz Spectroscopic Uncertainty Analysis for Explosive Mixture Components Determination using Multi-objective Micro Genetic Algorithm, Advances in Engineering Software, Volume 42, Issue 9, Pages 649-659, (2011)
+
+\bibitem{Chen_OE_2011}
+Yi Chen, Yong Ma, Zheng Lu, Zhi-Ning Xia, Hong Cheng, Chemical Components Determination via Terahertz Spectroscopic Statistical Analysis using Micro Genetic Algorithm, Optical Engineering, Volume 50, Issue 3, Pages 034401-12, (2011)
+
+\bibitem{Chen_CEC_2007}
+Y. Chen, M.P. Cartmell, Multi-objective Optimisation on Motorized Momentum Exchange Tether for Payload Orbital Transfer, 2007 IEEE Congress on Evolutionary Computation (CEC), 25-28 September, Singapore, (2007) 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+%14
+%http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1007055
+\bibitem{Mendel1865} G. Mendel,
+            Experiments in Plant Hybridization,
+            url{www.mendelweb.org/Mendel.html} (1865).
+
+%15
+\bibitem{O'Neil2009} D. O'Neil,
+         Mendel's Genetics ,
+         \url{http://anthro.palomar.edu/mendel/mendel_1.htm} (2009).
+
+%16
+\bibitem{Song1999} I.S. Song, H.W. Woo, M.J. Tahk,
+            A genetic algorithm with a Mendel operator for global minimization,
+             Proceedings of the 1999 Congress on Evolutionary Computation,
+             Washington, DC, USA,
+             2 (1999) 1521-1526. 
+%http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=782664
+
+%17
+\bibitem{Park2001} C.S. Park, H. Lee, H.C. Bang, M.J. Tahk,
+            Modified mendel operation for multimodal function optimization,
+             Proceedings of the 2001 Congress on Evolutionary Computation,
+             Seoul, South Korea,
+             2 (2001) 1388-1392. 
+%http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=934353
+
+
+%18
+\bibitem{Kadrovach2001} B. Anthony Kadrovach, S.R. Michaud, J.B. Zydallis, G.B. Lamont, B. Secrest, D. Strong,
+         Extending the simple genetic algorithm into multi-objective problems via mendelian pressure,
+         2001 Genetic and Evolutionary Computation Conference,
+         San Francisco,
+         California,
+          7-11 July,
+1 (2001) 181-188.
+
+%19
+\bibitem{Kadrovach2002} B.A. Kadrovach, J.B. Zydallis, G.B. Lamont,
+            Use of mendelian pressure in a multi-objective genetic algorithm,
+             Proceedings of the 2002 Congress on Evolutionary Computation,
+             Piscataway, New Jersey,
+             12-17 May,
+             1 (2002) 962-967.
+
+\bibitem{Ishibuchi2002}
+H. Ishibuchi, T. Yoshida, T. Murata, Balance between genetic search and local search in memetic algorithms for multiobjective permutation flowshop scheduling, IEEE Transactions on Evolutionary Computation 7 (2003) 204-223. 
+
+\bibitem{Furi2005}
+Victoria Furi$\acute{o}$, Andr$\acute{e}$s Moya, Rafael Sanju$\acute{a}$n, The cost of replication fidelity in an RNA virus, PNAS 102 (2005) 10233-10237. 
+
+
+\bibitem{Zitzler1999}
+E. Zitzler, Evolutionary Algorithms for Multiobjective Optimization: Methods and Applications, Diss. ETH No. 13398, ETH Zurich, Switzerland, 1999.
+
+\bibitem{NAS2004}
+the National Academy of Sciences (NAS),
+Teaching about Evolution and the Nature of Science,National Academy of Sciences Press, 2004.
+
+\bibitem{Haupt2004}
+R.L. Haupt, S.E. Haupt, Practical Genetic Algorithms, Second Edition, John Wiley $\&$ Sons, Inc., 2004.
+
+%20
+\bibitem{MOGA1993} C.M. Fonseca, P.J. Fleming,
+    Genetic algorithm for multi-objective optimisation: formulation,
+             discussion and generalization,
+             In: S. Forrest (ed.),
+             Genetic Algorithm: Proceedings of the Fifth
+             International Conference, Morgan Kaufmann, San Mateo, CA,
+             1 (1993) 141-153.
+
+%21
+\bibitem{NPGA1994} J.N. Horn,  D.E.N. Goldberg,
+A niched pareto genetic algorithm for multi-objective
+optimisation,
+             Proceedings of the First IEEE Conference on Evolutionary Computation, IEEE World Congress on Computational              Intelligence,  27-29 Jun,
+              1 (1994) 82-87.
+
+%22
+\bibitem{NSGA1994} N. Srinivas, K. Deb,
+ Multiobjective optimisation using nondominated sorting in genetic
+             algorithm,
+             Evolutionary Computation 2 (1994) 221-248.
+
+%23
+\bibitem{NSGAII2002} K. Deb, A. Pratap, S. Agarwal, T. Meyarivan,
+A fast and elitist multiobjective genetic algorithm: nsgaii,
+             IEEE Trans. on Evolutionary Comput. 6 (2002) 182-197.
+
+%24
+\bibitem{Tenti1996} P. Tenti,
+Forecasting foreign exchange rates using recurrent neural
+networks, Applied Artificial Intelligence 10 (1996) 567-581. 
+
+%25
+\bibitem{Gujarati2004} D.N. Gujarati, Basic Econometrics(4th Edition),
+McGraw-Hill Companies, 2004.
+
+%26
+\bibitem{Reitz2007}
+S. Reitz, M.A. Schmidt, M.P. Taylor, End-user order flow and exchange rate dynamics, The European Journal of Finance 17 (2011) 153-168.  
+
+%27
+\bibitem{Rime2008} D. Rime, L. Sarno, E. Sojli,
+ Exchange rate forecasting, order flow, and macroeconomic information, CEPR Discussion Paper No. DP7225. Available at SSRN: http://ssrn.com/abstract=1372545, 2009.
+
+%28
+\bibitem{Andersen2003} T. Andersen, T. Bollerslev, F.X. Diebold,
+C. Vega, Micro effects of macro announcements: real-time price
+discovery in foreign exchange, American Economic Review 93 (2003) 38-62.
+
+%29
+\bibitem{Bacchetta2006} P. Bacchetta, E. Wincoop,
+Can information heterogeneity explain the exchange rate determination puzzle?,
+American Economic Review 96 (2006) 552-576. 
+
+%30
+\bibitem{Marks2008} J. Marks,
+The construction of mendel's laws, Evolutionary Anthropology 17 (2008) 250-253.
+
+%31
+\bibitem{Montgomery2003} D.C. Montgomery, G.C. Runger, Applied Statistics and Probability for Engineers(Third Edition), John Wiley $\&$ Sons, Inc., 2003.
+
+%32
+\bibitem{Evans2002} M. Evans, R. Lyons,
+Order flow and exchange rate dynamics, Journal of Political
+Economy, 110 (2002) 170-180. 
+
+%33
+\bibitem{Allen2007} M.P. Allen,
+Understanding Regression Analysis, Springer, 2007.
+
+%34
+\bibitem{sgalab2009} Y. Chen,
+Simple Genetic Algorithm Laboratory Toolbox for MATLAB,
+\url{http://www.mathworks.co.uk/matlabcentral/fileexchange/5882}, 2009.
+
+\end{thebibliography}
+
+%\clearpage
+%\section*{Appendix}
+%\input{original_data_table.tex}
+
+\clearpage
+
+\clearpage
+
+\tableofcontents
+
+\clearpage
+
+\listoffigures
+
+\listoftables
+
+\end{document}
+
+\endinput
+%%
+%% End of file `elsarticle-template-harv.tex'.
